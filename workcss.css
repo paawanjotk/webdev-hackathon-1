@@ -1,0 +1,680 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: top;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+body{
+    margin:0;
+    padding: 0;
+
+}
+.topmini{
+    background-color: white;
+}
+.mainheader {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+.welcome{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60vh;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(8, 8, 65);
+}
+.nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    margin: 0 10px;
+}
+.nav a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+.nav a:hover {
+    color: darkblue;
+}
+.button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: darkblue;
+}
+.banner {
+    background-color: white;;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.darkblue-bg {
+    background-color: darkblue !important;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    gap: 2rem;
+}
+
+#home > div {
+    position: relative;
+    top: -7.5rem;
+}
+
+#why-us{
+    width: 20%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.learnmore {
+    border-radius: 1rem 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    margin:auto;
+}
+
+
+.cards {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+}
+
+.box, .card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.card-icon {
+    font-size: 3rem;
+}
+section.about{
+    display:flex;
+}
+
+section.about > .img {
+    width: 45%;
+    background-color: white;
+}
+
+section.about > .img > img {
+    aspect-ratio: 1.5;
+    width: 100%;
+}
+
+.aboutmain {
+    width: 55%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-title {
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.part {
+    display: flex;
+}
+
+.part .icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.part h3 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.part p {
+    padding: 0;
+    font-size: 1rem;
+    margin: 0;
+}
+.numbers{
+    background-color: rgb(159, 159, 207);
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+}
+
+.numbers > .box {
+    width: 20%;
+    text-align: center;
+}
+
+.numbers > .box > i {
+    font-size: 2rem;
+    background-color: darkblue;
+    color: white;
+    border-radius: 2rem;
+    box-sizing: content-box;
+    padding: 1rem;
+    position: relative;
+    top: -3rem;
+    margin-bottom: -3rem;
+}
+
+.numbers > .box > h1 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.form-button {
+    padding: 0.5rem 1rem;
+    border: 2px solid darkblue;
+    border-radius: 1.25rem;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.form-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    padding: 2rem;
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-column {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-column-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: darkblue;
+}
+
+h2.footer-column-title {
+    font-size: 2rem;
+}
+
+.footer-column-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.footer-column-list {
+    list-style: none;
+    padding: 0;
+    padding-left: 1.3em;
+}
+
+.footer-column-list > li {
+    padding-left: 1.3em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-column-list > li:first-of-type {
+    margin-top: 0;
+}
+
+.footer-column-list > li:before {
+    content: "\f054";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc(1.3em * -1);
+    width: 1.3em;
+    color: darkblue;
+}
+
+.footer-column-list > li > a {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-column-list > li > a:hover {
+    color: darkblue;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.footer-socials > a {
+    background-color: darkblue;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-socials > a:hover {
+    background-color: darkblue;
+}
+
+.copyrights {
+    padding: 1rem;
+    background-color: darkblue;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyrights a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.copyrights a:hover {
+    color: black;
+}
+
+.newsletter-content-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+}
+
+.newsletter-form > input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none !important;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    outline: none !important;
+    font-size: 1rem;
+}
+
+.newsletter-form > input:focus {
+    outline: none !important;
+}
+
+.newsletter-form > input:hover {
+    border: none !important;
+    outline: none !important;
+}
+
+.newsletter-form > button {
+    padding: 0.5rem 1rem;
+    border: 2px solid darkblue;
+    border-radius: 1.25rem;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.team-content-text {
+    text-align: center;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.user-card {
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 48%;
+}
+
+.user-card-image {
+    width: 35%;
+    padding: 0.75rem;
+}
+
+.user-card-image > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-card-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.user-card-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+    color: darkblue;
+}
+
+.user-card-role {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: black;
+    opacity: 0.65;
+}
+
+.user-card-content > hr {
+    margin-bottom: 0.5rem;
+    width: 30%;
+}
+
+.user-card-bio {
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: black;
+    opacity: 0.65;
+}
+
+.user-card-socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.user-card-socials > a {
+    background-color: rgba(0, 0, 0, 0.1);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkblue;
+    text-decoration: none;
+}
+
+.user-card-socials > a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.section-2 {
+    padding: 2rem;
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 2rem;
+    color: darkblue;
+}
+
+section p {
+    color: black;
+    font-weight: 500;
+}
+
+.gallery-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery-card {
+    width: 23%;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 0;
+    overflow: hidden;
+}
+
+.gallery-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+.gallery-card:hover > img {
+    transform: scale(2);
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.contact-info {
+    width: 50%;
+}
+
+.contact > div {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.contact > div > i {
+    font-size: 1.5rem;
+    background-color: lightdarkblue;
+    aspect-ratio: 1/1;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+}
+
+.form > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.25rem;
+}
+
+.form > div > input, .form > div > textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+section.section-2 > h1{
+    text-align: center;
+}
+.send_message{
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0c5bad;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.form-box {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fields, .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.form-input {
+    width: 32%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #6E5160;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6E5160;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #6E5160;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6E5160;
+}
+
